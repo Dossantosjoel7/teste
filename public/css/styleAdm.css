@@ -1,0 +1,57 @@
+
+
+
+ div.login-form{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+ }
+
+ .custom-alert{
+   position: fixed;
+   top: 90px;
+   right: 25px;
+ }
+
+
+ div.painel-menu{
+   position: fixed;
+   height: 100%;
+   z-index: 11;
+}
+@media screen and (max-width: 991px) {
+   div.painel-menu{
+       height: auto;
+       width: 100%;
+   
+   }
+   #main-content{
+       margin-top:60px;
+   }
+}
+
+.breadcrumb {
+   border-radius: 0;
+   padding: 8px 9px 8px 9px;
+   margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: #f1f1f1;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #888;
+ }
+
+
+

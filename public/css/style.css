@@ -1,0 +1,170 @@
+/*
+	Nome: Folha de Estilo Principal 
+	Copyright: 2022-2023 © Herman&Joel
+	Data de Criação: 08/12/22 08:39
+    Data de Ultima Revisão: 10/12/22 22:33
+	Descrição: Este Documento de estilo e resposanvel por ser a folha de estilo principal
+
+*/
+
+    :root{
+        --Cor_Principal: #3f1266;
+        --Cor-Fundo-Botao: #822acf;
+    }
+
+    /*Importando fontes*/
+    @font-face{
+        font-family:'Merienda';
+        src: 
+            url(../fonts/Merienda/static/Merienda-Bold.woff2) format('woff2'),
+            url(../fonts/Merienda/static/Merienda-Bold.woff) format('woff'),
+            url(../fonts/Merienda/static/Merienda-Bold.ttf) format('truetype');
+        font-weight:700;
+    }
+
+    @font-face{
+        font-family:'Merienda';
+        src: 
+            url(../fonts/Merienda/static/Merienda-Regular.woff2) format('woff2'),
+            url(../fonts/Merienda/static/Merienda-Regular.woff) format('woff'),
+            url(../fonts/Merienda/static/Merienda-Regular.ttf) format('truetype');
+        font-weight:400;
+    }
+
+    @font-face{
+        font-family:'Ubuntu';
+        src: 
+            url(../fonts/Ubuntu/Ubuntu-Regular.woff2) format('woff2'),
+            url(../fonts/Ubuntu/Ubuntu-Regular.woff) format('woff'),
+            url(../fonts/Ubuntu/Ubuntu-Regular.ttf) format('truetype');
+        font-weight:400;
+    }
+
+    @font-face{
+        font-family:'Ubuntu';
+        src: 
+            url(../fonts/Ubuntu/Ubuntu-Medium.woff2) format('woff2'),
+            url(../fonts/Ubuntu/Ubuntu-Medium.woff) format('woff'),
+            url(../fonts/Ubuntu/Ubuntu-Medium.ttf) format('truetype');
+        font-weight:500;
+    }
+
+    @font-face{
+        font-family:'Ubuntu';
+        src: 
+            url(../fonts/Ubuntu/Ubuntu-Bold.woff2) format('woff2'),
+            url(../fonts/Ubuntu/Ubuntu-Bold.woff) format('woff'),
+            url(../fonts/Ubuntu/Ubuntu-Bold.ttf) format('truetype');
+        font-weight:700;
+    }
+
+    /*#---- Fim ----#*/
+
+    /* Parte do Estilo da Pagina*/
+    body{
+        background-color: var(--Cor_Principal);
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .h-fonte{
+        font-family: 'Merienda';
+    }
+
+    .h-linha{
+        width: 180px;
+        margin: 0 auto;
+        height: 1.7px;
+    }
+
+
+    .color_white{
+        color: white;
+    }
+
+    .custom-bg{
+        background-color: var(--Cor-Fundo-Botao);
+        border: 1px solid var(--Cor-Fundo-Botao);
+    }
+
+    .custom-bg:hover{
+        background-color: var(--Cor_Principal);
+        border-color: var(--Cor_Principal);
+    }
+
+    .Fonte_T500{
+        font-weight: 500;
+    }
+
+    .style_Quarto{
+        max-width: 350px;
+        margin:auto;
+    }
+
+    .card-img-top{
+        height:150px;
+        /*width:350px;*/
+    }
+
+    /*#---- Fim ----#*/
+    
+    #navImg{/*Img do cabeçario da Pagina*/
+        height: 50px;
+        width: 90px;
+    }
+
+    /* Parte de Estilo para ocultar os botões de seta da tag input*/
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        display: none;
+    }
+
+    /*#---- Fim ----#*/
+
+    /* Parte de estilo da seção de boas vindas da pagina*/
+    .Parte-Principal{
+        padding: 2rem 9%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        width: 90%;
+        border-radius: 2px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        min-height: 80vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Conteudo-Principal{
+        text-align: center;
+    }
+    
+    .Conteudo-Principal span{
+        font-weight: bolder;
+        color:transparent;
+        -webkit-text-stroke: .1rem white;
+        font-size: 5vw;
+        display: block;
+    }
+    
+    .Conteudo-Principal h3{
+        font-size: 7vw;
+        color: white;
+    }
+
+    .Conteudo-Principal p{
+        max-width: 60rem;
+        margin: 1rem auto;
+        font-size: 1.4rem;
+        color: whitesmoke;
+        line-height: 2;
+    }
+
+    /*#---- Fim ----#*/
+
+    .caixa_X{
+        border: 1px solid #3f1266;
+        background-color: azure;
+    }
+
+    /*-------------------*/

@@ -1,0 +1,9 @@
+Copyright (c) 2023 Herman&Joel
+
+
+
+Copie o arquivo php.ini, para C:\xampp\php
+
+
+crie uma conta no parte cliente 
+acesse a parte administrativa com login  "admin" e pass "admin" 

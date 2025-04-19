@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Admin</title>
+    <link rel="stylesheet" href="../../public/media/bootstrap-icons-1.10.2/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../public/css/bootstrap-5.0.2/bootstrap.min.css">
+    <style>
+        :root{
+            --offcanvas-largura: 230px;
+            --topNavbar-Altura: 72px;
+        }
+
+        .sidebar-nav{
+            width: var(--offcanvas-largura);
+
+        }
+
+        @media (min-width:992px){
+            body {
+                overflow: auto !important;
+            }
+            .offcanvas-backdrop::before{
+                display: none;
+            }
+
+            main{
+                margin-left: var(--offcanvas-largura);
+            }
+            .sidebar-nav{
+                transform: none;
+                visibility: visible !important;
+                top:var(--topNavbar-Altura);
+                height: calc(100% - var(--topNavbar-Altura));
+            }
+
+            
+        }
+        
+            .xep:hover{
+                background-color: rgb(164, 60, 196);
+            }
+
+            .breadcrumb {
+                border-radius: 0;
+                padding: 8px 9px 8px 9px;
+                background: #d4dae6;
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top" style="background-color: blueviolet;">
+            <div class="container-fluid">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <a class="navbar-brand me-5 fw-bold me-auto fs-3 h-fonte" href="#"><img id="navImg" src="#" alt="Logotipo_de_Imagem"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-file-person-fill" style="font-size: 25px;"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li><a class="dropdown-item" href="#">Login</a></li>
+                      <li><a class="dropdown-item" href="#">Sair</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><p class="" style="text-align: center;">Ola Joel Santos</p></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- -->
+      <div class="offcanvas offcanvas-start sidebar-nav text-white" style="background-color: blueviolet;" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <!--
+
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Bem Vindo</h5>
+        </div>
+        <hr class="dropdown">
+        -->
+        
+        <div class="offcanvas-body p-0">
+            <nav class="navbar-dark">
+                <ul class="navbar-nav">
+                    <li class="px-3 xep">
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2" style="font-size: 20px;" >
+                                <i class="bi bi-speedometer2"></i>
+                            </span>
+                            <span class="" style="font-size: 20px;">Painel</span>
+                        </a>
+                    </li>
+                    <li class="px-3 xep">
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2" style="font-size: 20px;" >
+                                <i class="bi bi-calendar-week"></i>
+                            </span>
+                            <span class="" style="font-size: 20px;">Reservas</span>
+                        </a>
+                    </li>
+                    <li class="px-3 xep">
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2" style="font-size: 20px;" >
+                                <i class="bi bi-building-gear"></i>
+                            </span>
+                            <span class="" style="font-size: 20px;">Gerir Quartos</span>
+                        </a>
+                    </li>
+                    <li class="px-3 xep">
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2" style="font-size: 20px;" >
+                                <i class="bi bi-person-fill-gear"></i>
+                            </span>
+                            <span class="" style="font-size: 20px;">Gerir Funcionários</span>
+                        </a>
+                    </li>
+                    <!--<li class="px-3 xep">
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2" style="font-size: 20px;" >
+                                <i class="bi bi-card-checklist"></i>
+                            </span>
+                            <span class="" style="font-size: 20px;">Gerir Serviços</span>
+                        </a>
+                    </li> -->
+                    <!--<li class="px-3 xep">
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2" style="font-size: 20px;" >
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <span class="" style="font-size: 20px;">Gerir Reclamações</span>
+                        </a>
+                    </li> -->
+                    <!--<li class="px-3 xep">
+                        <a href="#" class="nav-link px-3 active">
+                            <span class="me-2" style="font-size: 20px;" >
+                                <i class="bi bi-gear"></i>
+                            </span>
+                            <span class="" style="font-size: 20px;">Configurações</span>
+                        </a>
+                    </li> -->
+
+                </ul>
+            </nav>
+        </div>
+      </div>
+
+      <!-- -->
+      <main class="mt-5 pt-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 fs-4 breadcrumb"><a href="#"><i class="bi bi-house" style="color: rebeccapurple;"></i></a> / Painel</div>
+                </div>
+            </div>
+            <h6 class="bg-dark text-center text-white p-1 m-0">2022-2023 &copy; Herman&Joel</h6>
+      </main>
+    <script src="../../public/js/bootstrap-5.0.2/bootstrap.min.js"></script>
+</body>
+</html>
